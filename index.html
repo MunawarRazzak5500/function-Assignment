@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function displayDateTime() {
+  const dateTime = new Date();
+  document.write(dateTime.toLocaleString());
+}
+
+function greetUser(firstName, lastName) {
+  const fullName = `${firstName} ${lastName}`;
+  alert(`Hello, ${fullName}!`);
+}
+
+function addNumbers() {
+  const num1 = Number(prompt("Enter the first number:"));
+  const num2 = Number(prompt("Enter the second number:"));
+  const sum = num1 + num2;
+  return sum;
+}
+
+function calculator(num1, num2, operator) {
+  let result;
+  switch (operator) {
+    case "+":
+      result = num1 + num2;
+      break;
+    case "-":
+      result = num1 - num2;
+      break;
+    case "*":
+      result = num1 * num2;
+      break;
+    case "/":
+      result = num1 / num2;
+      break;
+    default:
+      result = "Invalid operator";
+  }
+  document.write(`Result: ${result}`);
+  return result;
+}
+
+
+function squareNumber(num) {
+  const result = num * num;
+  return result;
+}
+
+
+function factorial(num) {
+  let result = 1;
+  for (let i = 1; i <= num; i++) {
+    result *= i;
+  }
+  return result;
+}
+
+function countNumbers(start, end) {
+  for (let i = start; i <= end; i++) {
+    document.write(`${i}<br>`);
+  }
+}
+
+    </script>
+</body>
+</html>
